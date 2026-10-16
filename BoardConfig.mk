@@ -19,6 +19,7 @@ TARGET_SCREEN_DENSITY := 560
 
 # Kernel
 TARGET_KERNEL_BAZEL_FLAGS += --//vendor/oneplus/sm8850:dtbo_config=//vendor/oneplus/sm8850-devicetrees:infiniti_dtbo_config
+TARGET_KERNEL_BAZEL_FLAGS += --//build/kernel/kleaf:defconfig_fragment=//common:arch/arm64/configs/infiniti.fragment
 
 # Properties
 TARGET_ODM_PROP += $(DEVICE_PATH)/properties/odm.prop

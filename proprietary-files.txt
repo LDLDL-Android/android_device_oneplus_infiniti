@@ -1545,6 +1545,8 @@ odm/firmware/fastchg/smart_chg_config_table.txt
 # Display configurations
 my_product/vendor/etc/display_apollo_list_AA601_P_7_A0020_dsc_cmd_mode_panel.xml:vendor/etc/display_apollo_list_AA601_P_7_A0020_dsc_cmd_mode_panel.xml
 my_product/vendor/etc/display_apollo_list_AD296_P_3_A0020_dsc_cmd_mode_panel.xml:vendor/etc/display_apollo_list_AD296_P_3_A0020_dsc_cmd_mode_panel.xml
+my_product/vendor/etc/display_apollo_list_AA601_P_7_A0020_dsc_cmd_mode_panel.xml:vendor/etc/oplus_disp/display_apollo_list_AA601_P_7_A0020_dsc_cmd_mode_panel.xml
+my_product/vendor/etc/display_apollo_list_AD296_P_3_A0020_dsc_cmd_mode_panel.xml:vendor/etc/oplus_disp/display_apollo_list_AD296_P_3_A0020_dsc_cmd_mode_panel.xml
 odm/etc/PanelChaplin/3D-Lut_Center_P3.txt
 odm/etc/PanelChaplin/3D-Lut_Center_sRGB.txt
 odm/etc/PanelChaplin/3D-Lut_Enhance_P3.txt
@@ -1676,6 +1678,7 @@ odm/etc/PanelChaplin/RGBMatrix_public_sRGB.txt
 odm/etc/PanelChaplin/panelchaplin
 odm/etc/display/qdcm_calib_data_AA601_P_7_A0020_dsc_cmd_mode_panel.json
 odm/etc/display/qdcm_calib_data_AD296_P_3_A0020_dsc_cmd_mode_panel.json
+odm/etc/sdm_display_resolution_extn.xml
 odm/etc/sdm_display_resolution_extn.xml:vendor/etc/display/sdm_display_resolution_extn.xml;TRYSRCFIRST
 vendor/etc/ltm_config_AA601_P_7_A0020_dsc_cmd_mode_panel.xml
 vendor/etc/ltm_config_AD296_P_3_A0020_dsc_cmd_mode_panel.xml

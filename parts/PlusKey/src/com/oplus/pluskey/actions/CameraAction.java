@@ -1,6 +1,8 @@
 package com.oplus.pluskey.actions;
 
 import android.app.KeyguardManager;
+import android.os.PowerManager;
+import android.os.SystemClock;
 import android.content.Context;
 import android.content.Intent;
 import android.provider.MediaStore;
@@ -45,6 +47,12 @@ public class CameraAction implements Action {
                 | Intent.FLAG_ACTIVITY_CLEAR_TOP
                 | Intent.FLAG_ACTIVITY_RESET_TASK_IF_NEEDED);
         Haptics.confirm(ctx);
+        // The Plus Key is not a wake key, so turn the screen on for the camera.
+        PowerManager pm = ctx.getSystemService(PowerManager.class);
+        if (pm != null && !pm.isInteractive()) {
+            pm.wakeUp(SystemClock.uptimeMillis(), PowerManager.WAKE_REASON_GESTURE,
+                    "com.oplus.pluskey:camera");
+        }
         ctx.startActivity(i);
     }
 }

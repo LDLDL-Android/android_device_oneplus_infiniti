@@ -6,4 +6,7 @@
 <resources>
     <!-- Default for Settings.Global.DEVICE_NAME $1=MODEL-->
     <string name="def_device_name_simple" translatable="false">OnePlus 15</string>
+
+    <!-- Let ADFR idle down to 1 Hz by default -->
+    <integer name="def_min_refresh_rate">0</integer>
 </resources>

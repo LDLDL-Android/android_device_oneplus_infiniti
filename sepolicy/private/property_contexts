@@ -1,0 +1,2 @@
+# SurfaceFlinger panel refresh-rate diagnostics
+ro.surface_flinger.panel_refresh_rate_node u:object_r:surfaceflinger_prop:s0 exact string

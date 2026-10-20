@@ -47,4 +47,21 @@
 
     <!-- The radius of the enrollment progress bar, in dp -->
     <integer name="config_udfpsEnrollProgressBar" translatable="false">119</integer>
+
+    <!-- Touch report rate modes of the HBP touch daemon (vnd_custom_config_main.xml
+         report_rate indexes). The last one must match HTPR_ENABLE_VALUE. -->
+    <string-array name="config_touchReportRateEntries" translatable="false">
+        <item>Default</item>
+        <item>180 Hz</item>
+        <item>240 Hz</item>
+        <item>288 Hz</item>
+        <item>330 Hz</item>
+    </string-array>
+    <string-array name="config_touchReportRateValues" translatable="false">
+        <item>0</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>14</item>
+    </string-array>
 </resources>

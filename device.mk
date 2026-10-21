@@ -45,6 +45,10 @@ PRODUCT_PRODUCT_PROPERTIES += \
     persist.oplus.display.vrr.pdfr=1 \
     sys.oplus.display.refreshrate_thread=true
 
+# Keep fixed-source video below 60 fps from selecting high refresh-rate modes.
+PRODUCT_SYSTEM_EXT_PROPERTIES += \
+    debug.sf.frame_rate_multiple_threshold=120
+
 # Keymint
 PRODUCT_PACKAGES += \
     android.hardware.security.keymint3-service.strongbox.nxp \
